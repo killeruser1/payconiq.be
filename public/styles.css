@@ -1,0 +1,58 @@
+header {
+    background-color: #f73958; /* Couleur rose */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #0e71b8; /* Couleur bleu */
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    color: #333; /* Couleur gris */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #333; /* Couleur gris */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Couleur verte */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Couleur verte, hover */
+}
+
+/* Nouveau code pour le logo */
+#logo {
+    width: 120px; /* Augmente légèrement la largeur du logo */
+    height: auto; /* Laisse la hauteur ajustée automatiquement pour préserver les proportions */
+    float: right; /* Positionne le logo sur la droite */
+    margin-top: 20px; /* Ajoute une marge en haut pour l'espacement */
+    margin-right: 20px; /* Ajoute une marge à droite pour l'espacement */
+}

